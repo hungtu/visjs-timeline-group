@@ -17,9 +17,9 @@ export class VisComponent implements OnInit {
 
   ngOnInit() {
     var groups = new vis.DataSet([
-      { id: 0, content: 'First', value: 1 },
-      { id: 1, content: 'Third', value: 3 },
-      { id: 2, content: 'Second', value: 2 },
+      { id: 0, content: 'Station S0', value: 1 },
+      { id: 1, content: 'Station S1', value: 2 },
+      { id: 2, content: 'Station S2', value: 3 },
     ]);
 
     // create a dataset with items
@@ -29,43 +29,43 @@ export class VisComponent implements OnInit {
         id: 0,
         group: 0,
         content: 'item 0',
-        start: new Date(2014, 3, 17),
-        end: new Date(2014, 3, 21),
+        start: new Date(2023, 1, 3,12,0,0,0),
+        end: new Date(2023, 1, 3,12,30,0,0)
       },
       {
         id: 1,
         group: 0,
         content: 'item 1',
-        start: new Date(2014, 3, 19),
-        end: new Date(2014, 3, 20),
+        start: new Date(2023, 1, 3,12,30,0,0),
+        end: new Date(2023, 1, 3,14,0,0,0)
       },
       {
         id: 2,
         group: 1,
         content: 'item 2',
-        start: new Date(2014, 3, 16),
-        end: new Date(2014, 3, 24),
+        start: new Date(2023, 1, 3,12,30,0,0),
+        end: new Date(2023, 1, 3,13,30,0,0)
       },
       {
         id: 3,
         group: 1,
         content: 'item 3',
-        start: new Date(2014, 3, 23),
-        end: new Date(2014, 3, 24),
+        start: new Date(2023, 1, 3,14,30,0,0),
+        end: new Date(2023, 1, 3,18,30,0,0),
       },
       {
         id: 4,
         group: 1,
         content: 'item 4',
-        start: new Date(2014, 3, 22),
-        end: new Date(2014, 3, 26),
+        start: new Date(2023, 1, 3,13,0,0,0),
+        end: new Date(2023, 1, 3,15,30,0,0)
       },
       {
         id: 5,
         group: 2,
         content: 'item 5',
-        start: new Date(2014, 3, 24),
-        end: new Date(2014, 3, 27),
+        start: new Date(2023, 1, 3,15,30,0,0),
+        end: new Date(2023, 1, 3,16,30,0,0),
       },
     ]);
 
